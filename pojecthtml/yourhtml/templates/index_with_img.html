@@ -1,0 +1,28 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'yourhtml/css/yourhtml.css'%}">
+</head>
+<body>
+    <aside>
+        <img src="{% static 'C:\Users\bogda\PycharmProjects\django_27\pojecthtml\yourhtml\static\img' %}" alt="my future">
+        <span class="logo">bogda</span>
+        <ul>
+            <a href=""><li>Home</li></a>
+            <a href=""><li>About us</li></a>
+            <a href=""><li>Contacts</li></a>
+        </ul>
+    </aside>
+    ,<main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

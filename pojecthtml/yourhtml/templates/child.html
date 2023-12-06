@@ -1,0 +1,13 @@
+{% extends "yourhtml/index_with_img.html" %}
+
+{% block title %}Welcome to My Awesome Website{% endblock %}
+
+{% block content %}
+    <h1>Welcome to My Awesome Website</h1>
+    <p>This is some unique content for the child template</p>
+    {% include 'sidebar.html' %}
+{% endblock %}
+
+{% block footer %}
+2022 MyAwesomeWebsite
+{% endblock %}

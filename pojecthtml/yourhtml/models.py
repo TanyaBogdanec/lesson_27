@@ -15,3 +15,7 @@ class User(models.Model):
 
     def __str__(self):
         return self.name_user
+
+class Product(models.Model):
+    name_product = models.CharField(max_length=100, verbose_name='name_product')
+    price = models.FloatField()

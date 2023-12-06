@@ -3,9 +3,9 @@ from .models import Account
 from .forms import UserForm
 
 
-def account_list(request):
+def product_list(request):
     accounts = Account.objects.all()
-    return render(request, 'account_list.html', accounts)
+    return render(request, 'product_list.html', accounts)
 
 
 def view_user_input(request):
@@ -25,8 +25,8 @@ def view_success(request):
 
 
 def view_index(request):
-    return render(request, 'main/home_tema.html')
+    return render(request, 'yourhtml/home_tema.html')
 
 
 def view_contacts(request):
-    return render(request, 'main/contacts.html')
+    return render(request, 'yourhtml/contacts.html')

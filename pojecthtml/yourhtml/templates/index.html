@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Account List</title>
+    <title>Product List</title>
 </head>
 <body>
-    <h1>Account List</h1>
+    <h1>Product List</h1>
     <ul>
         {% for account in accounts %}
-            <li>{{ account.name }} - ${{ account.address }}</li>
+            <li>{{ product.name_product }} - ${{ product.price }}</li>
         {% endfor %}
     </ul>
 </body>
